@@ -24,3 +24,6 @@ export MANPAGER='less -X';
 
 # Always enable colored `grep` output.
 export GREP_OPTIONS='--color=auto';
+
+# Node version manager
+export NVM_DIR=~/.nvm
