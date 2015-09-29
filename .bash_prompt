@@ -59,6 +59,18 @@ prompt_git() {
 	fi;
 }
 
+prompt_dashes() {
+	let fillSize=${COLUMNS}-$1
+	fill=""
+	while [ "$fillSize" -gt "0" ]
+	do
+		fill="─${fill}"
+		let fillSize=${fillSize}-1
+	done
+
+	echo -e "${fill}"
+}
+
 if tput setaf 1 &> /dev/null; then
 	tput sgr0; # reset colors
 	bold=$(tput bold);
@@ -105,7 +117,7 @@ fi;
 
 # Set the terminal title to the current working directory.
 PS1="\[\033]0;\w\007\]";
-PS1+="\[${bold}\]\n"; # newline
+PS1+="\[${blue}\]\$(prompt_dashes 6) \$(date +%H:%M)\n" # dashed line
 PS1+="\[${userStyle}\]\u"; # username
 PS1+="\[${white}\] at ";
 PS1+="\[${hostStyle}\]\h"; # host
