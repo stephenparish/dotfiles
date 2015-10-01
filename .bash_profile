@@ -55,4 +55,4 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 source $(brew --prefix nvm)/nvm.sh
 
 # Use stable node by default
-nvm use stable
+# nvm use stable
