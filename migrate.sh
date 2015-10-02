@@ -22,3 +22,6 @@ npm list -g --depth=0 	> npm-g-list.txt
 
 # wifi configs
 cp /Library/Preferences/SystemConfiguration/com.apple.airport.preferences.plist ~/migration
+
+# gas mask host files
+cp ~/Library/Gas\ Mask ~/migration/host-files
