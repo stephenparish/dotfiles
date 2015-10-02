@@ -261,3 +261,8 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+# Adds a simple todo item to the desktop.
+function todo() {
+	touch ~/Desktop/"$*"
+}
