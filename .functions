@@ -266,3 +266,7 @@ function tre() {
 function todo() {
 	touch ~/Desktop/"$*"
 }
+
+function chargeCycleCount() {
+	system_profiler SPPowerDataType | grep "Cycle Count" | awk '{print $3}'
+}
