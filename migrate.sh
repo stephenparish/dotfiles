@@ -17,7 +17,7 @@ npm list -g --depth=0 	> npm-g-list.txt
 # comm <(sort brew-list.txt) <(sort brew.sh-cleaned-up)
 
 # let's hold on to these
-# cp ~/.extra ~/migration/home
+cp ~/.extra ~/migration/home
 # cp -R ~/.ssh ~/migration/home
 
 # wifi configs
