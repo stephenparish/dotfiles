@@ -17,3 +17,6 @@ brew install moreutils
 brew install findutils
 # GNU `sed`, overwriting the built-in `sed`
 brew install gnu-sed --default-names
+
+# Autocomplete utils
+brew install fzf

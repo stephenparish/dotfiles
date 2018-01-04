@@ -60,7 +60,9 @@ prompt_git() {
 }
 
 prompt_dashes() {
-	let fillSize=${COLUMNS}-$1
+  # Just using 50 for now
+	# let fillSize=${COLUMNS}-$1
+	let fillSize=50
 	fill=""
 	while [ "$fillSize" -gt "0" ]
 	do

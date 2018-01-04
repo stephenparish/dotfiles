@@ -19,10 +19,10 @@ npm list -g --depth=0 	> npm-g-list.txt
 # let's hold on to these
 cp ~/.path ~/migration/home
 cp ~/.extra ~/migration/home
-# cp -R ~/.ssh ~/migration/home
+cp -R ~/.ssh ~/migration/home
 
 # wifi configs
 cp /Library/Preferences/SystemConfiguration/com.apple.airport.preferences.plist ~/migration
 
 # gas mask host files
-cp ~/Library/Gas\ Mask ~/migration/host-files
+cp -R ~/Library/Gas\ Mask ~/migration/host-files
